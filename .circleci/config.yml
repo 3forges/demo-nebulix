@@ -212,7 +212,7 @@ jobs:
       - run:
           name: "Run Astro Build"
           command: |
-              cross-env BLOG_SLUG=blog PORTFOLIO_SLUG=work SHOP_SLUG=shop MENU_SLUG=menu WEBSITE_LANGUAGE=en CURRENCY=USD UNITS=metric NODE_VERSION=18 SNIPCART_KEY=$SNIPCART_KEY \
+              BLOG_SLUG=blog PORTFOLIO_SLUG=work SHOP_SLUG=shop MENU_SLUG=menu WEBSITE_LANGUAGE=en CURRENCY=USD UNITS=metric NODE_VERSION=18 SNIPCART_KEY=$SNIPCART_KEY \
               pnpm run build
       - run:
           name: "pnpm root path"
