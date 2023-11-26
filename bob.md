@@ -1,7 +1,8 @@
 ## Install
 
-* pnpm add @vueuse/core
-  * => some warms
+* missing package ?
+  * pnpm add @vueuse/core
+    * => some warms
 ```
 pnpm add @vueuse/core
  WARN  2 deprecated subdependencies found: @npmcli/move-file@2.0.1, stable@0.1.8
@@ -20,15 +21,15 @@ dependencies:
 
 Done in 8.6s
 ``` 
+* some LightHouse scores missing fixes
+  * edit `src/layouts/BaseLayout.astro`
+    * L. 108 : remove " s"
+    * L. 97 : "src: contact.data.form.thumbnail," to "src: contact.data.form?.thumbnail,"
+    * l. 81 : "src: contact.data.form.thumbnail," to "src: contact.data.form?.thumbnail,"
+    * l. 25 : remove "<!doctype html>"
 
-* edit `src/layouts/BaseLayout.astro`
-  * L. 108 : remove " s"
-  * L. 97 : "src: contact.data.form.thumbnail," to "src: contact.data.form?.thumbnail,"
-  * l. 81 : "src: contact.data.form.thumbnail," to "src: contact.data.form?.thumbnail,"
-  * l. 25 : remove "<!doctype html>"
-
-* edit `src/layouts/Footer.astro`
-  * L. 119 : remove " opacity-60"
+  * edit `src/layouts/Footer.astro`
+    * L. 119 : remove " opacity-60"
 
 
 ## Run
