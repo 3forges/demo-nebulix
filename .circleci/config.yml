@@ -52,7 +52,7 @@ jobs:
       # BASH_ENV: /home/circleci/.profile
       # BASH_ENV: ~/.profile
       # BASH_ENV: ${HOME}/.profile
-      PNPM_VERSION: 7.5.1
+      PNPM_VERSION: 8.11.0 # 7.5.1
       SHELL: /bin/bash
     steps:
       # <<: *pokus-common-steps
@@ -86,7 +86,7 @@ jobs:
               # bash -c 'curl -fsSL https://get.pnpm.io/install.sh | sh -'
               echo "JBL POINT DEBUG 2"
               echo "PNPM_VERSION = [${PNPM_VERSION}]"
-              # PNPM_VERSION: 7.5.1
+              # PNPM_VERSION: 8.11.0 # 7.5.1
               # bash -c "curl -fsSL https://get.pnpm.io/install.sh | env PNPM_VERSION='${PNPM_VERSION}' sh -"
               # curl -fsSL https://get.pnpm.io/install.sh | env PNPM_VERSION=${PNPM_VERSION} sh -
               # curl -fsSL https://get.pnpm.io/install.sh | env PNPM_VERSION="${PNPM_VERSION}" sh -
@@ -151,7 +151,7 @@ jobs:
     working_directory: /root/project
     # resource_class: pokusio/podman-small1
     environment:
-      PNPM_VERSION: 7.5.1
+      PNPM_VERSION: 8.11.0 # 7.5.1
       # BASH_ENV: /home/circleci/.profile
       # BASH_ENV: ~/.profile
       # BASH_ENV: ${HOME}/.profile
@@ -248,7 +248,7 @@ jobs:
       
     # resource_class: pokusio/podman-small1
     environment:
-      PNPM_VERSION: 7.5.1
+      PNPM_VERSION: 8.11.0 # 7.5.1
       SHELL: /bin/bash
       # BASH_ENV: /home/circleci/.profile
       # PR_BRANCH_NAME: ${CIRCLE_BRANCH}
@@ -568,7 +568,7 @@ jobs:
       - image: node:<< pipeline.parameters.pokus_nodejs_version >>
     # resource_class: pokusio/podman-small1
     environment:
-      PNPM_VERSION: 7.5.1
+      PNPM_VERSION: 8.11.0 # 7.5.1
       SHELL: /bin/bash
       # BASH_ENV: /home/circleci/.profile
       MUSTACHE_VERSION: 4.2.0
@@ -798,7 +798,7 @@ jobs:
       
     # resource_class: pokusio/podman-small1
     environment:
-      PNPM_VERSION: 7.5.1
+      PNPM_VERSION: 8.11.0 # 7.5.1
       SHELL: /bin/bash
       BASH_ENV: /home/circleci/.profile
       RELEASE_TAG: << pipeline.git.tag >>
