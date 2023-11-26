@@ -35,6 +35,7 @@
     "@remark-embedder/core": "^3.0.2",
     "@remark-embedder/transformer-oembed": "^3.0.0",
     "@vueuse/components": "^10.6.1",
+    "@vueuse/core": "^10.6.1",
     "@vueuse/integrations": "^10.6.1",
     "astro": "^3.5.5",
     "astro-compress": "^2.2.3",

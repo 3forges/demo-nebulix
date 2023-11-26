@@ -22,7 +22,6 @@ const about = await getEntry("config", "about");
 const contact = await getEntry("config", "contact");
 ---
 
-<!doctype html>
 <html lang={lang} data-currency={currency}>
   <head>
     <BaseHead
@@ -78,7 +77,7 @@ const contact = await getEntry("config", "contact");
       }
       <Picture
         slot="image"
-        src={contact.data.form.thumbnail}
+        src={contact.data.form?.thumbnail}
         alt={`contact`}
         sizes="50vw"
         aspect={4 / 5}
@@ -94,7 +93,7 @@ const contact = await getEntry("config", "contact");
           {
             media: "(max-width: 768px)",
             ar: 21 / 9,
-            src: contact.data.form.thumbnail,
+            src: contact.data.form?.thumbnail,
             layout: "constrained",
             breakpoints: [500, 601, 768, 820, 962, 1280, 1440, 1536, 1920],
           },
@@ -105,7 +104,7 @@ const contact = await getEntry("config", "contact");
 
     <script>
       const html = document.getElementsByTagName("html")[0];
-  s
+
 
       const SmoothScroll = () => {
         html.style["scroll-behavior"] = "auto";
